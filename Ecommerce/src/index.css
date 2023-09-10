@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar{
+  display: none;
+}
+
+/* font-family: 'Poppins' , sans-serif*/
+
+/* Navbar */
+.navbar{
+  font-family: 'Poppins' , sans-serif;
+  font-size : 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  box-shadow: 2px 12px 2px -7px  rgb(149, 135, 86);
+  --webkit-box-shadow: 0px 8px 6px -6px gray;
+  border-bottom: 0 solid gray !important;
+  z-index: 5;
+}
+
+.nav-link{
+  font-family: cursive;
+  font-weight:  300 !important; 
+  margin-inline: 5px;
+  transition: 300ms ease;
+}
+
+.active{
+  border-bottom: 2px solid rgb(248, 242, 242);
+  color: whitesmoke;
+  transform: scale(1.1,1.1)
+}
+
+.navbar-brand{
+  font-family: cursive;
+  font-weight: 700;
+  /* font-family: 'roboto', sans-serif; */
+  letter-spacing: 3px;
+  color: rgb(228, 175, 13) !important;
+}
+
+
+/* =================================================================================================================== */
+
+.footer{
+  color : white;
+  padding: 10px;
+  background-color: #000;
+  background: --webkit-linear-gradient(
+    to right,
+    #434343,
+    #000
+  );
+  background: linear-gradient(to right, #434343, #000)
+}
+
+.footer a{
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.footer a:hover{
+  color: white;
+  border-bottom: 1px solid #ffefba;
+}
+
+/* ==================================================   Page not found css ================================================== */
+.pnf{
+  display: flex;
+  min-height: 65vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.pnf-title{
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.pnf-heading{
+  font-weight: normal;
+}
+
+.pnf-btn{
+  color: black;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+
+/* ============================================================register page ======================================== */
+/* .register{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+  flex-direction: column;
+} */
+
+
+/* =============================*/
+.product-div{
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.product-link{
+  text-decoration: none !important;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.product-card-div .card-title{
+  font-weight: bold;
+}
+
+.product-card-div .card-img-top{
+  width: 100%;
+  /* min-height: 300px;
+  max-height: 400px; */
+  height: 400px;
+  transform: scale(1,1);
+  z-index: 1;
+  transition: 300ms ease;
+}
+
+.product-card-div{
+  /* margin-right: 15px;
+  margin-left: 15px; */
+  background-color: #c2bebe;
+  transition: 300ms ease;
+  overflow: hidden;
+}
+
+.card-img-top:hover{
+  filter:drop-shadow( 20px 20px 3px  rgb(95, 93, 93));
+  transform: scale(1.1,1.1) rotateZ(0deg);
+}
+
+.product-card-div:hover{
+  transform: scale(0.9,0.9);
+  box-shadow: 1px 1px 1px black,2px 1px 15px -4px black;
+}
+
+
+/* =====================homepage========================== */
